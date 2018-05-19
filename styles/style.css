@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -22,25 +22,31 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
 body{
 
-	background: skyblue;
+	background: white
+	;
 }
-
-
+.statelogoff { float:right; height:45px; line-height:45px; }
+.statelogoff > a { padding:0 4px 0 10px; color:#757575; font-size:12px; background:url("//img.echosting.cafe24.com/skin/base/common/ico_bar.gif") no-repeat 0 1px; }
+.statelogoff .log { background:none; }
+.statelogoff > a .count,
+.statelogoff > a .count span { position:relative; display:inline-block; background:url("//img.echosting.cafe24.com/skin/base/layout/bg_basket_count.png") no-repeat; }
+.statelogoff > a .count { left:-5px; top:-1px; margin:0 -5px 0 3px; padding:0 0 0 7px; vertical-align:middle; background-position:0 0; }
+.statelogoff > a .count span { height:14px; padding:1px 7px 1px 0; font-weight:bold; color:#fff; font-size:11px; line-height:14px; vertical-align:top; background-position:right -26px; }
 
 
 .main_wrapper{
-	
+
 	width: 1000px;
 	height:auto;
 	margin:auto;
-	
+
 }
 
 
@@ -48,7 +54,7 @@ body{
 	width:1000px;
 	height:100px;
 	margin:auto;
-	
+
 }
 
 #logo{
@@ -66,13 +72,13 @@ body{
 
 .content_wrapper{
 	width:1000px;
-	
+
 	margin:auto;
 	background:red;
 }
 
 #menu{
-	
+
 padding:0;
 margin:0;
 line-height:40px;
@@ -82,7 +88,7 @@ float:left;
 #menu li{
 	list-style:none;
 	display:inline;
-} 
+}
 
 #menu a{
 	text-decoration:none;
@@ -103,11 +109,11 @@ line-height:40px;
 #menu a:hover
 {
 color:orange;
-font-weight:bolder; 
+font-weight:bolder;
 text-decoration:underline;
 }
 
-#content_area 
+#content_area
 {
 width:800px;
 
@@ -118,12 +124,12 @@ background:pink;
 
 #sidebar{
 	width:200px;
-	
+
 	background:black;
 	float:left;
 	}
-	
-#sidebar_title{	
+
+#sidebar_title{
 background:white;
 text-align:center;
 color:black;
@@ -132,7 +138,7 @@ padding:10px;
 font-family:arial;
 text-decoration:none;
 }
-	
+
 #cats{
 text-align:center;
 }
@@ -140,8 +146,8 @@ text-align:center;
 #cats li{
 list-style:none;
 margin:5px;
-	
-}	
+
+}
 
 #cats a{color:white;
 padding:8px;
@@ -155,7 +161,7 @@ text-decoration:none;
 #cats a:hover{color:orange; font-weight:bolder; text-decoration:underline;}
 
 #products_box{
-	
+
 	width:780px;
 	text-align:center;
 	margin-left:30px;
