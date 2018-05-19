@@ -6,7 +6,7 @@ include("functions/functions.php");
 ?>
 <html>
 	<head>
-		<title> My Online Shop </title>
+		<title> HONGIK ART </title>
 		
 		
 		
