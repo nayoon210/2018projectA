@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE> /*까트*/
 <?php
 session_start();
 include("functions/functions.php");
