@@ -34,11 +34,11 @@ include("functions/functions.php");
 				<ul id="menu">
 				
 				<li> <a href="index.php">Home</a></li>
-				<li> <a href="all_products.php">All Products</a></li>
-				<li> <a href="customer/my_account.php">My Account</a> </li>
-				<li> <a href="#">Sign Up</li>
-				<li> <a href="cart.php">Shopping Cart</a></li>
-				<li> <a href="#">Contact Us</li>
+				<li> <a href="all_products.php">전시정보</a></li>
+				<li> <a href="customer/my_account.php">회화</a> </li>
+				<li> <a href="#">공예</li>
+				<li> <a href="cart.php">디자인</a></li>
+				<li> <a href="#"></li>
 				
 				</ul>
 					<div id="form">
