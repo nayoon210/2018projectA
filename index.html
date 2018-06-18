@@ -1,197 +1,354 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype>
+<html>
 <head>
-  <title>HONGIK_ART</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            flex-wrap:nowrap;
+            flex-basis: 1600px;
+            flex-shrink:0;
 
-  <style>
-  .fakeimg {
-      height: 200px;
-      background: #aaa;
-  }
-	.carousel-inner img {
-      width: 800px;
-      height: 400px;
-  }
-	.carousel-inner2 img {
-      width: 800px;
-      height: 400px;
+        }
+        .container-row{
+          display:flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          flex-shrink:0;
 
-  }
-#grid{
-	display:grid;
-	grid-template-columns: 1fr 200px;
-}
-#grid2{
-  display:grid;
-  grid-template-rows: 70px 1fr;
-	
-}
-#grid3
-{
-  display:grid;
-  grid-template-columns: 200px 800px 300px;
-}
-.form-group
-{
-  margin:5px;
-}
-		  
-h1{
-	font-size:50px; font-weight:border;padding:20px; height:100px; margin-bottom:0px;
-	  }
-.layout-footer {  width:1000px; height:176px;background-color: #EAEAEA;}
-.layout-footer .utilMenu { overflow:hidden; height:42px; border-bottom:1px solid #e8e8e8; line-height:43px; *zoom:1; }
-.layout-footer .utilMenu li {  padding:0 10px 0 10px; background:url("//img.echosting.cafe24.com/skin/base/common/ico_bar2.gif") no-repeat 0 15px; }
-.layout-footer .utilMenu li.home { padding-left:0; background:none; }
-.layout-footer .utilMenu li a { color:#2e2e2e; background:url("//img.echosting.cafe24.com/skin/base/common/ico_bar2.gif") no-repeat 0 5px;}
-.layout-footer .address { padding:13px 0 0; color:#757575; line-height:18px; }
-.layout-footer .address span { padding:0 25px 0 0; }
-.layout-footer .address span a { color:#757575; }
-.layout-footer .copyright { position:absolute; left:204px; bottom:0; height:32px; color:#ededed; font-size:11px; line-height:32px; }
-.layout-footer .pageTop { position:absolute; right:0; top:10px; }
-.layout-footer .hosting { position:absolute; right:0; top:77px; }
-  </style>
+          justify-content:flex-end;
+
+        }
+        header{
+
+            padding-left:0px;
+            padding-top:40px;
+            display:flex;
+            flex-direction:column;
+        }
+        footer{
+            border-top:1px solid gray;
+            padding:20px;
+            text-align: center;
+
+        }
+        footer a{
+          color:#282f3a;
+        }
+        .content{
+            display:flex;
+
+            margin: 10px;
+        }
+        .content nav{
+            border-right:1px solid gray;
+        }
+        .box
+        {
+          border-bottom:1px solid #282f3a;
+          border-top:1px solid #282f3a;
+        }
+        .content aside{
+            padding:10px;
+        }
+
+        main{
+            padding:10px;
+        }
+        a:hover {
+            font-weight:bolder;
+        }
+.nav .search-container{ ;}
+    #banner-left{
+      width:150px;
+    }
+    .product{
+      display:flex;
+      flex-direction:column;
+
+    }
+    .product img{
+      padding:5px;
+
+    }
+    .product h6,p{display:inline-block;}
+    .box-row
+    {
+      padding:5px;
+      display:flex;
+      justify-content:center;
+      justify-content:space-between;
+
+    }
+    .utilMenu
+    {
+      font-size:15px;
+      border-bottom:1px solid #e8e8e8; line-height:43px; *zoom:1;
+    }
+    .utilMenu span{
+      font-size:11px;
+    }
+    .utilMenu p { float:left; padding:0 10px 0 10px; background:url("//img.echosting.cafe24.com/skin/base/common/ico_bar2.gif") no-repeat 0 15px; }
+    </style>
 </head>
-<body>
+<body style="height:1500px">
+    <div class="container">
+      <header>
+        <h1><a href="https://www.naver.com/" style="color:#282f3a; ">HI ART</a></h1>
+          <div class="container-row">
 
-<div  id="grid">
-	<div>
-		<h1>HI ART</h1>
-	</div>
-	<div>
-		<form class="form-inline" action="/action_page.php">
-  			<label for="email">Email address:</label>
-  				<input type="email" class="form-control" id="email"style="padding:2px 6px">
-  			<label for="pwd">Password:</label>
-  				<input type="password" class="form-control" id="pwd"style="padding:2px 6px">
-  			<div class="form-check">
-   				 <label class="form-check-label">
-     			 		<input class="form-check-input" type="checkbox"> Remember me
-    				</label>
-  			</div>
-  			<button type="submit" class="btn btn-primary"style="padding:2px 5px; margin:3px">Submit</button>
-		</form>
-	</div>
-</div>
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href="#">HOME</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">전시정보</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">회화</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">공예</a>
-      </li>
-			<li class="nav-item">
-        <a class="nav-link" href="#">디자인</a>
-      </li>
-			<li class="nav-item">
-        <a class="nav-link" href="#">아트상품</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">사진</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">판화</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">기타</a>
-      </li>
-    </ul>
-  </div>
 
-</nav>
-<div  id="grid3" style="margin-top:30px; margin-left:5px; ">
+            <div class="item-left"><a class="nav-link" href="login.html"style="color:#282f3a; ">로그인</a></div>
+            <div class="item-left"><a class="nav-link" href="#"style="color:#282f3a; ">회원가입</a></div>
+          </div>
+          <navbar style="flex-shrink:0">
 
-		<div >
-		<h3>Some Links</h3>
-		<p>Lorem ipsum dolor sit ame.</p>
-		<ul class="nav nav-pills flex-column">
+            <div class="nav" style="background:#282f3a; align-items: center;">
+              <ul style="display:flex; flex-direction: row; margin-bottom:2px;">
+          <li class="nav-item" style="flex-shrink:0" >
+            <a class="nav-link" href="#"style="color:#f4f5f7; ">전시정보</a>
+          </li>
+          <li class="nav-item"style="flex-shrink:0">
+            <a class="nav-link" href="#" style="color:#f4f5f7;">회화</a>
+          </li>
+          <li class="nav-item"style="flex-shrink:0">
+            <a class="nav-link" href="#" style="color:#f4f5f7;">공예</a>
+          </li>
+          <li class="nav-item"style="flex-shrink:0">
+            <a class="nav-link disabled" href="#" style="color:#f4f5f7;">디자인</a>
+          </li>
+          <li class="nav-item"style="flex-shrink:0">
+            <a class="nav-link disabled" href="#" style="color:#f4f5f7;">아트상품</a>
+          </li>
+          <li class="nav-item"style="flex-shrink:0">
+            <a class="nav-link disabled" href="#" style="color:#f4f5f7;">사진</a>
+          </li>
+          <li class="nav-item"style="flex-shrink:0">
+            <a class="nav-link disabled" href="#" style="color:#f4f5f7;">디자인</a>
+          </li>
+          <li class="nav-item"style="flex-shrink:0">
+            <a class="nav-link disabled" href="#" style="color:#f4f5f7;">판화</a>
+          </li>
+          <li class="nav-item"style="flex-shrink:0">
+            <a class="nav-link disabled" href="#" style="color:#f4f5f7;">기타</a>
+          </li>
+
+
+          </ul>
+          <div style="display:flex; justify-content:flex-end;">
+          <div class="search-container" style="padding:3px; height:44px">
+            <form class="form-inline" action="/action_page.php"style="margin-left:100px;">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+      </span>
+    </navbar>
+
+        </header>
+        <section class="content" >
+          <div  id="banner-left">
+		<h4>Hongik Artplatform</h4>
+		<p>자유롭게 작품을 감상하고 거래하세요</p>
+		<ul class="nav nav-pills flex-column" style="font-weight:bolder;">
 			<li class="nav-item">
-				<a class="nav-link active" href="#">Active</a>
+				<a class="nav-link " href="#"style="color:#282f3a;">HI ART란?</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Link</a>
+				<a class="nav-link" href="#"style="color:#282f3a;">홈페이지 이용방법</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Link</a>
+				<a class="nav-link" href="#"style="color:#282f3a;">문의사항</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link disabled" href="#">Disabled</a>
+				<a class="nav-link" href="#"style="color:#282f3a;">상품의뢰</a>
 			</li>
 		</ul>
 		</div>
-		<div id="demo" class="carousel slide" data-ride="carousel">
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-9/14595612_1756911651235504_7555423354571306654_n.jpg?_nc_cat=0&_nc_eui2=AeFAG4GzzaRHEKTNqjxhMPFnT6YtK_tbLctaoSKcbsgLTMBg29ydNmy859FVSZl8pPRWtagvyMZFYuIxDorhVNVfwO9c7tMas7IiVyu7Z9wiCw&oh=ea1ea9efab7679d251f87d17c43c153d&oe=5B8C2669" alt="" width="1200" height="500">
-      <div class="carousel-caption">
-        <h3></h3>
-        <p></p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCMaoJNhB8DI3yiJiRZJtc3nrx_ZgP9AwilWdQMocxwHOcOumo7A" alt="Chicago" width="1200" height="500">
-      <div class="carousel-caption">
-        <h3></h3>
-        <p></p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="https://github.com/hongiksidi-dev/2015/blob/gh-pages/img/Pablo%20Fuentes%20Gomez_EX-_01.jpg?raw=true" alt="New York" width="1100" height="500">
-      <div class="carousel-caption">
-        <h3></h3>
-        <p></p>
-      </div>
-    </div>
+            <main>
+              <div id="demo" class="carousel slide" data-ride="carousel">
+<ul class="carousel-indicators">
+<li data-target="#demo" data-slide-to="0" class="active"></li>
+<li data-target="#demo" data-slide-to="1"></li>
+<li data-target="#demo" data-slide-to="2"></li>
+</ul>
+<div class="carousel-inner">
+<div class="carousel-item active" style="width:600px; height:400px;">
+  <img src="http://hongiksidi.com/2015/wp-content/uploads/2015/12/20160101_153946.jpg" alt="" width="600px" height="400px">
+  <div class="carousel-caption">
+    <h3></h3>
+    <p></p>
   </div>
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
+</div>
+<div class="carousel-item" style="width:600px; height:400px; ">
+  <img src="https://raw.githubusercontent.com/hongiksidi-dev/2015/gh-pages/img/%EA%B6%8C%EC%84%B8%EC%9D%B8_%EB%B0%94%EB%8B%B4_07.jpg" alt="Chicago" width="600px" height="400px">
+  <div class="carousel-caption">
+    <h3></h3>
+    <p></p>
+  </div>
+</div>
+<div class="carousel-item"style="width:600px; height:400px;">
+  <img src="https://github.com/hongiksidi-dev/2015/blob/gh-pages/img/Pablo%20Fuentes%20Gomez_EX-_01.jpg?raw=true" alt="New York" width="600px" height="400px">
+  <div class="carousel-caption">
+    <h3></h3>
+    <p></p>
+  </div>
 </div>
 </div>
-
-
-<div class="layout-footer">
-            <!--@css(/css/module/layout/footer.css)-->
-            <ul class="utilMenu">
-                <li class="home"><a href="#">홈</a>
-                <a href="#">회사소개</a>
-                <a href="#">이용약관</a>
-                <a href="#">개인정보처리방침</a>
-                <a href="#">이용안내</a></li>
-            </ul>
-            <p class="address">
-                <span>법인명(상호) :  </span> <span>대표자(성명) :</span> <span>사업자 등록번호 안내 : </span> <span>통신판매업 신고</span> <span></span> <br />
-                <span>전화: </span> <span>팩스 :</span> <span>주소 : </span><br />
-                <span>개인정보보호책임자 : <a href="#"></a></span><br />
-                <span>Contact <strong><a href="#">email</a></strong> for more information.</span>
-            </p>
-            <p class="copyright">Copyright &copy; 2011 <strong>{$mall_name}</strong>. All rights reserved.</p>
-            <p class="pageTop"><a href="#"화면 최상단으로 이동하기></a></p>
-
+<a class="carousel-control-prev" href="#demo" data-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</a>
+<a class="carousel-control-next" href="#demo" data-slide="next">
+<span class="carousel-control-next-icon"></span>
+</a>
 </div>
 
+            </main>
+            <aside>
+              <ul class="nav nav-pills flex-column" style="font-weight:bolder;">
+          			<li class="nav-item">
+          				<a class="nav-link " href="#"style="color:#282f3a;">이번주 전시정보</a>
+                  <div>
+                    <img src="http://www.artsum.co.kr/files/20100216/exhibitionSt_58_434434_1266318280_i.jpg" alt="사진" width="300px" height="360px">
+                  </div>
+                </li>
+              </ul>
+            </aside>
+        </section>
+        <section class="content-row">
+
+            <div class="box">
+               <ul class="nav nav-pills flex-column" style="font-weight:bolder; height:35px;">
+          			<li class="nav-item" style="display:flex; align-items: center;">
+          				<a class="nav-link " href="#"style="color:#282f3a;">새로 등록된 작품</a>
+                <li>
+                <ul>
+            </div>
+            <div class="content">
+            <div class="product">
+              <img style="display:block;" src="http://www.mu-um.com/data/Exhibit/201804/1524458173.jpg" alt="작품사진" width="100%" height="200px">
+              <div class="box-row">
+              <h6 style="display:block;float:left;">라벤더 언덕</h6>
+              <p style="display:block; float:right;">by 이현열</p>
+            </div>
+            </div>
+            <div class="product">
+              <img style="display:block;" src="http://www.mu-um.com/data/Exhibit/201708/1501837117.jpg" alt="작품사진" width="100%" height="200px">
+              <div class="box-row">
+                <h6 style="display:block; float:left;">걸어가는 지푸라기</h6>
+              <p style="display:block; float:right;">by 김한울</p>
+              </div>
+            </div>
+            <div class="product">
+              <img style="display:block;" src="http://www.gallerymigo.co.kr/works_data/2012-12-01/works/%E2%93%92%EC%82%AC%ED%83%80,%20SaTARK%2017,%2080%20x%2080cm,%20archival%20pigment%20print,%202011,%20Printed%20by%20Lee%20dong-gun.jpg" alt="작품사진" width="100%" height="200px">
+              <div class="box-row">
+              <h6 style="display:block;float:left;">무제</h6>
+              <p style="display:block; float:right;">by 사타</p>
+              </div>
+                </div>
+
+            <div class="product">
+              <img style="display:block;" src="http://www.artrie.com/HyAdmin/upload/goodFile/GOODS3_1501810154.JPG" alt="작품사진" width="100%" height="200px">
+              <div class="box-row">
+              <h6 style="display:block;float:left;">꽃잔치</h6>
+              <p style="display:block; float:right;">by 이수동</p>
+              </div>
+            </div>
+            <div class="product">
+              <img style="display:block;" src="http://blogimg.ohmynews.com/attach/3590/1289839816.jpg" alt="작품사진" width="100%" height="200px">
+              <div class="box-row">
+              <h6 style="display:block;float:left;">결혼</h6>
+              <p style="display:block; float:right;">by 유현경</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="content-row">
+
+            <div class="box">
+               <ul class="nav nav-pills flex-column" style="font-weight:bolder; height:35px;">
+          			<li class="nav-item" style="display:flex; align-items: center;">
+          				<a class="nav-link " href="#"style="color:#282f3a;">사람들이 많이 본 작품</a>
+                <li>
+                <ul>
+            </div>
+            <div class="content">
+            <div class="product">
+              <img style="display:block;" src="http://www.mu-um.com/data/Exhibit/201804/1524458173.jpg" alt="작품사진" width="100%" height="200px">
+              <div class="box-row">
+              <h6 style="display:block;float:left;">라벤더 언덕</h6>
+              <p style="display:block; float:right;">by 이현열</p>
+            </div>
+            </div>
+            <div class="product">
+              <img style="display:block;" src="http://www.mu-um.com/data/Exhibit/201708/1501837117.jpg" alt="작품사진" width="100%" height="200px">
+              <div class="box-row">
+                <h6 style="display:block; float:left;">걸어가는 지푸라기</h6>
+              <p style="display:block; float:right;">by 김한울</p>
+              </div>
+            </div>
+            <div class="product">
+              <img style="display:block;" src="http://www.gallerymigo.co.kr/works_data/2012-12-01/works/%E2%93%92%EC%82%AC%ED%83%80,%20SaTARK%2017,%2080%20x%2080cm,%20archival%20pigment%20print,%202011,%20Printed%20by%20Lee%20dong-gun.jpg" alt="작품사진" width="100%" height="200px">
+              <div class="box-row">
+              <h6 style="display:block;float:left;">무제</h6>
+              <p style="display:block; float:right;">by 사타</p>
+              </div>
+                </div>
+
+            <div class="product">
+              <img style="display:block;" src="http://www.artrie.com/HyAdmin/upload/goodFile/GOODS3_1501810154.JPG" alt="작품사진" width="100%" height="200px">
+              <div class="box-row">
+              <h6 style="display:block;float:left;">꽃잔치</h6>
+              <p style="display:block; float:right;">by 이수동</p>
+              </div>
+            </div>
+            <div class="product">
+              <img style="display:block;" src="http://blogimg.ohmynews.com/attach/3590/1289839816.jpg" alt="작품사진" width="100%" height="200px">
+              <div class="box-row">
+              <h6 style="display:block;float:left;">결혼</h6>
+              <p style="display:block; float:right;">by 유현경</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <div module="Layout_footer">
+          <!--@css(/css/module/layout/footer.css)-->
+          <div class="utilMenu">
+              <p class="home"><a href="/index.html">홈</a></p>
+              <p><a href="/shopinfo/company.html">회사소개</p>
+              <p><a href="/member/agreement.html">이용약관</a></p>
+              <p><a href="/member/privacy.html"><strong>개인정보처리방침</strong></a></p>
+              <p><a href="/shopinfo/guide.html">이용안내</a></p><br />
+          </div>
+          <div >
+              <p >법인명(상호) : 홍익홍익호옹익 <br/>
+              <span>전화 :010-1234-1234 </span> <span>팩스 :1234-1234 </span> <span>주소 : 서울특별시 마포구 상수동72-1 홍익대학교 제 4 공학과 T동 </span><br />
+              <span>제작자: 전진,김정환,박가람,최나윤 </span><br />
+              <span>HI ART는 통신판매 시스템을 제공하지 않으며, 통신판매의 당사자가 아니며 상품의 주문,배송 및 환불등과 관련한 의무와 책임은 각 판매자에게 있습니다.</br>
+                <strong><a href="mailto:{$email}">Contact sunnyrainism@naver.com</a></strong> for more information.</span>
+              </p>
+          </div>
+
+
+
+
+          <p class="copyright">Copyright &copy; 2018 <strong>HI_ART</strong>. All rights reserved.</p>
+          <p class="pageTop"><a href="#header" title="화면 최상단으로 이동하기"></a></p>
+
+      </div>
+
+        </footer>
+    </div>
 </body>
 </html>
